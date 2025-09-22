@@ -64,7 +64,7 @@ def die():
         frame = 0
         for spriteLength in range(8):
             clear_canvas()
-            #여기 채우면 끝
+            character.clip_draw(frame * size, size * 1, size, size, 400, 300, 500, 500)
             update_canvas()
             frame = (frame + 1) % 8
             delay(0.05)
