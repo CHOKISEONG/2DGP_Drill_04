@@ -11,20 +11,35 @@ stopSecond = 0.1
 def idle():
     global frame
     for i in range(5):
-
-        pass
+        for spriteLength in range(8):
+            clear_canvas()
+            character.clip_draw(frame * size, 0, size, size, 400, 300, 300, 300)
+            update_canvas()
+            frame = (frame + 1) % 8
+            delay(0.05)
     delay(stopSecond)
     pass
 
 def walk():
     global frame
-
+    for i in range(5):
+        for spriteLength in range(8):
+            clear_canvas()
+            #여기 채우면 끝
+            update_canvas()
+            frame = (frame + 1) % 8
+            delay(0.05)
     delay(stopSecond)
 
 def jump():
     global frame
     for i in range(5):
-        pass
+        for spriteLength in range(8):
+            clear_canvas()
+            #여기 채우면 끝
+            update_canvas()
+            frame = (frame + 1) % 8
+            delay(0.05)
     delay(stopSecond)
     pass
 
@@ -42,7 +57,12 @@ def attack():
 def die():
     global frame
     for i in range(5):
-        pass
+        for spriteLength in range(8):
+            clear_canvas()
+            #여기 채우면 끝
+            update_canvas()
+            frame = (frame + 1) % 8
+            delay(0.05)
     delay(stopSecond)
 
 while True:
