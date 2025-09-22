@@ -67,9 +67,14 @@ def die():
     global frame
     for i in range(5):
         frame = 0
-        for spriteLength in range(8):
+        for j in range(8):
             clear_canvas()
+<<<<<<< HEAD
             character.clip_draw(frame * size, size * 1, size, size, 400, 300, 500, 500)
+=======
+            clip = [1 + 0.1 * n for n in range(8)]
+            character.clip_draw(frame * size, size, size, int(size / clip[j]) , 400, int(300/clip[j]), 500, int(500 / clip[j]))
+>>>>>>> 9b3be5d (die 애니메이션에서 frame이 1 올라갈 때마다 프레임 크기를 조금씩 줄이게 변경)
             update_canvas()
             frame = (frame + 1) % 8
             delay(0.05)
