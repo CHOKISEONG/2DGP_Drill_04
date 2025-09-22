@@ -18,6 +18,7 @@ def idle():
             update_canvas()
             frame = (frame + 1) % 4
             delay(0.2)
+        delay(0.5)
     delay(stopSecond)
     pass
 
@@ -31,6 +32,7 @@ def walk():
             update_canvas()
             frame = (frame + 1) % 8
             delay(0.05)
+        delay(0.5)
     delay(stopSecond)
 
 def jump():
@@ -43,6 +45,7 @@ def jump():
             update_canvas()
             frame = (frame + 1) % 8
             delay(0.05)
+        delay(0.5)
     delay(stopSecond)
     pass
 
@@ -56,6 +59,7 @@ def attack():
             update_canvas()
             frame = (frame + 1) % 8
             delay(0.05)
+        delay(0.5)
     delay(stopSecond)
 
 def die():
@@ -68,6 +72,7 @@ def die():
             update_canvas()
             frame = (frame + 1) % 8
             delay(0.05)
+        delay(0.5)
     delay(stopSecond)
 
 while True:
