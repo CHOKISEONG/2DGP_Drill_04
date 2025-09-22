@@ -10,19 +10,30 @@ size = 32
 frame = 0
 
 def move():
-    pass
+    for i in range(5):
+        pass
+    delay(1)
 
 def walk():
-    pass
+    for i in range(5):
+        pass
+    delay(1)
 
 def jump():
+    for i in range(5):
+        pass
+    delay(1)
     pass
 
 def attack():
-    pass
+    for i in range(5):
+        pass
+    delay(1)
 
 def die():
-    pass
+    for i in range(5):
+        pass
+    delay(1)
 
 while True:
     move()
