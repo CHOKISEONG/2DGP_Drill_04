@@ -7,7 +7,7 @@ demon = load_image('demon_attack.png')
 
 size = 32
 frame = 0
-stopSecond = 0.1
+stopSecond = 1
 
 def idle():
     global frame
