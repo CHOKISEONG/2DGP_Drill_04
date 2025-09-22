@@ -4,7 +4,12 @@ open_canvas()
 
 grass = load_image('grass.png')
 character = load_image('ghost.png')
-
+for i in range(5):
+    clear_canvas()
+    character.clip_draw(frame * size, 0, size, size, 400, 300, 300, 300)
+    update_canvas()
+    frame = (frame + 1) % 8
+    delay(0.05)
 size = 32
 # fill here
 frame = 0

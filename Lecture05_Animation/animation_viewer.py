@@ -2,41 +2,45 @@ from pico2d import *
 
 open_canvas()
 
-grass = load_image('grass.png')
 character = load_image('ghost.png')
 
 size = 32
-# fill here
 frame = 0
 
-def move():
+def idle():
+    global frame
     for i in range(5):
+
         pass
     delay(1)
+    pass
 
 def walk():
-    for i in range(5):
-        pass
+    global frame
+
     delay(1)
 
 def jump():
+    global frame
     for i in range(5):
         pass
     delay(1)
     pass
 
 def attack():
+    global frame
     for i in range(5):
         pass
     delay(1)
 
 def die():
+    global frame
     for i in range(5):
         pass
     delay(1)
 
 while True:
-    move()
+    idle()
     walk()
     jump()
     attack()
