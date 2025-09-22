@@ -3,6 +3,7 @@ from pico2d import *
 open_canvas()
 
 character = load_image('ghost.png')
+demon = load_image('demon_attack.png')
 
 size = 32
 frame = 0
@@ -16,8 +17,8 @@ def idle():
             clear_canvas()
             character.clip_draw(frame * size, size * 8, size, size, 400, 300, 500, 500)
             update_canvas()
-            frame = (frame + 1) % 4
-            delay(0.2)
+            frame = (frame + 1) % 2
+            delay(0.4)
         delay(0.5)
     delay(stopSecond)
     pass
