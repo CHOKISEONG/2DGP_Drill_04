@@ -30,7 +30,11 @@ def jump():
 def attack():
     global frame
     for i in range(5):
-        pass
+        clear_canvas()
+        character.clip_draw(frame * size, 0, size, size, 400, 300, 300, 300)
+        update_canvas()
+        frame = (frame + 1) % 8
+        delay(0.05)
     delay(1)
 
 def die():
