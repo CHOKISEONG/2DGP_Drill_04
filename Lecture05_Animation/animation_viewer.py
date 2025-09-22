@@ -13,7 +13,7 @@ def idle():
     for i in range(5):
         for spriteLength in range(8):
             clear_canvas()
-            character.clip_draw(frame * size, 0, size, size, 400, 300, 300, 300)
+            character.clip_draw(frame * size, 0, size, size, 400, 300, 500, 500)
             update_canvas()
             frame = (frame + 1) % 8
             delay(0.05)
@@ -25,7 +25,7 @@ def walk():
     for i in range(5):
         for spriteLength in range(8):
             clear_canvas()
-            character.clip_draw(frame * size, size * 5, size, size, 400, 300, 300, 300)
+            character.clip_draw(frame * size, size * 5, size, size, 400, 300, 500, 500)
             update_canvas()
             frame = (frame + 1) % 8
             delay(0.05)
@@ -36,7 +36,7 @@ def jump():
     for i in range(5):
         for spriteLength in range(8):
             clear_canvas()
-            character.clip_draw(frame * size, size * 3, size, size, 400, 300, 300, 300)
+            character.clip_draw(frame * size, size * 3, size, size, 400, 300, 500, 500)
             update_canvas()
             frame = (frame + 1) % 8
             delay(0.05)
@@ -48,7 +48,7 @@ def attack():
     for i in range(5):
         for spriteLength in range(8):
             clear_canvas()
-            character.clip_draw(frame * size, 0, size, size, 400, 300, 300, 300)
+            character.clip_draw(frame * size, 0, size, size, 400, 300, 500, 500)
             update_canvas()
             frame = (frame + 1) % 8
             delay(0.05)
