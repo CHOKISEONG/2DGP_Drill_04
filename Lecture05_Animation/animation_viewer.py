@@ -11,12 +11,12 @@ stopSecond = 0.1
 def idle():
     global frame
     for i in range(5):
-        for spriteLength in range(8):
+        for spriteLength in range(2):
             clear_canvas()
-            character.clip_draw(frame * size, 0, size, size, 400, 300, 500, 500)
+            character.clip_draw(frame * size, size * 8, size, size, 400, 300, 500, 500)
             update_canvas()
-            frame = (frame + 1) % 8
-            delay(0.05)
+            frame = (frame + 1) % 4
+            delay(0.2)
     delay(stopSecond)
     pass
 
