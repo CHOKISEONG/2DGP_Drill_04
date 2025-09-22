@@ -6,25 +6,26 @@ character = load_image('ghost.png')
 
 size = 32
 frame = 0
+stopSecond = 0.1
 
 def idle():
     global frame
     for i in range(5):
 
         pass
-    delay(1)
+    delay(stopSecond)
     pass
 
 def walk():
     global frame
 
-    delay(1)
+    delay(stopSecond)
 
 def jump():
     global frame
     for i in range(5):
         pass
-    delay(1)
+    delay(stopSecond)
     pass
 
 def attack():
@@ -35,13 +36,13 @@ def attack():
         update_canvas()
         frame = (frame + 1) % 8
         delay(0.05)
-    delay(1)
+    delay(stopSecond)
 
 def die():
     global frame
     for i in range(5):
         pass
-    delay(1)
+    delay(stopSecond)
 
 while True:
     idle()
