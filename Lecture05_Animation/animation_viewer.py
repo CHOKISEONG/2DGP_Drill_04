@@ -11,6 +11,7 @@ stopSecond = 0.1
 def idle():
     global frame
     for i in range(5):
+        frame = 0
         for spriteLength in range(2):
             clear_canvas()
             character.clip_draw(frame * size, size * 8, size, size, 400, 300, 500, 500)
@@ -23,6 +24,7 @@ def idle():
 def walk():
     global frame
     for i in range(5):
+        frame = 0
         for spriteLength in range(8):
             clear_canvas()
             character.clip_draw(frame * size, size * 5, size, size, 400, 300, 500, 500)
@@ -34,6 +36,7 @@ def walk():
 def jump():
     global frame
     for i in range(5):
+        frame = 0
         for spriteLength in range(8):
             clear_canvas()
             character.clip_draw(frame * size, size * 3, size, size, 400, 300, 500, 500)
@@ -46,6 +49,7 @@ def jump():
 def attack():
     global frame
     for i in range(5):
+        frame = 0
         for spriteLength in range(8):
             clear_canvas()
             character.clip_draw(frame * size, 0, size, size, 400, 300, 500, 500)
@@ -57,6 +61,7 @@ def attack():
 def die():
     global frame
     for i in range(5):
+        frame = 0
         for spriteLength in range(8):
             clear_canvas()
             #여기 채우면 끝
